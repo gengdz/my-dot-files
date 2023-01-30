@@ -1,0 +1,388 @@
+{
+  "editor.fontSize": 14,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "newUntitledFile",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.shellArgs.osx": [
+    "-l"
+  ],
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 14,
+  "editor.tabSize": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": {
+      // 设置字体样式 加粗 下划线 斜体等
+      "fontStyle": "",
+      // 设置字体颜色
+      "foreground": "#2e8847"
+    } // 注释
+    // "keywords": "#0a0", // 关键字
+    // "variables": "#f00", // 变量名
+    // "strings": "#e2d75dbd", // 字符串
+    // "functions": "#5b99fcc9", // 函数名
+    // "numbers": "#AE81FF" // 数字z
+  },
+  // 校验哪些文件
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+  ],
+  // 保存的时候自动修复
+  "editor.codeActionsOnSave": {
+    // "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    // "source.fixAll.tslint": true,
+    // "source.fixAll.stylelint": true
+  },
+  // "editor.lineNumbers": "relative",
+  "files.autoSaveDelay": 2000,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.workspaceFolder": "/Users/gengdezhou/Documents/gengdz/learning-notes/algorithm/LeetCode",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  "leetcode.useWsl": true,
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.filePath": {
+    "default": {
+      "folder": "",
+      "filename": "${id}.${kebab-case-name}.${ext}"
+    }
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "markdown-preview-enhanced.previewTheme": "one-dark.css",
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "editor.formatOnSaveMode": "modifications",
+  "editor.guides.bracketPairs": true,
+  "code-runner.clearPreviousOutput": true,
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "One Dark Pro",
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.foldfix": true,
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.leader": "<space>",
+  // useCtrlKeys 使用 Vim 的 Ctrl 行为代替 VSCode 的行为
+  "vim.useCtrlKeys": true,
+  // handleKeys 被配置的 Key 将由 VSCode 执行，而不是 VSCodeVim 扩展。
+  "vim.handleKeys": {
+    // "<C-a>": false,
+    "<C-f>": false,
+  },
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^"
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "<ctrl>",
+        "a"
+      ],
+      "after": [
+        "<home>"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // {
+    //   "before": [
+    //     ";",
+    //     ";",
+    //   ],
+    //   "commands": [
+    //     "whichkey.show"
+    //   ]
+    // },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "2",
+        "s"
+      ]
+    },
+    {
+      "before": [
+        "<Esc>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        ":q"
+      ]
+    },
+    {
+      "before": [
+        "n"
+      ],
+      "after": [
+        "n",
+        "z",
+        "z",
+      ]
+    },
+    {
+      "before": [
+        "N"
+      ],
+      "after": [
+        "N",
+        "z",
+        "z",
+      ]
+    },
+    // {
+    //   "before": [
+    //     "s",
+    //     "b",
+    //   ],
+    //   "after": [
+    //     "i",
+    //     "Space",
+    //     "<Esc>"
+    //   ]
+    // },
+    // {
+    //   "before": [
+    //     "s",
+    //     "e",
+    //   ],
+    //   "after": [
+    //     "a",
+    //     "Space",
+    //     "<Esc>"
+    //   ]
+    // },
+    {
+      "before": [
+        "<CR>",
+      ],
+      "after": [
+        "o",
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        // 这个并没有生效 想做到的效果是 Shift + Enter 在普通模式下可以在当前行的上方插入一行。
+        // "<S-Enter>"
+        "<S-CR>",
+      ],
+      "after": [
+        "<S>",
+        "o",
+        "<Esc>"
+      ]
+    },
+    {
+      "before": [
+        "J"
+      ],
+      "after": [
+        "g",
+        "T"
+      ],
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "g",
+        "t"
+      ]
+    },
+    {
+      "before": [
+        "H"
+      ],
+      "after": [
+        "^",
+      ],
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$",
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "n"
+      ],
+      "commands": [
+        "editor.action.rename",
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "u"
+      ],
+      "commands": [
+        "references-view.findReferences"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g"
+      ],
+      "commands": [
+        "workbench.view.scm",
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.view.search"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "f"
+      ],
+      "commands": [
+        "workbench.view.explorer"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "e",
+        "t",
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ],
+    },
+    // {
+    //   "before": [
+    //     ";",
+    //     ";",
+    //   ],
+    //   "commands": [
+    //     "whichkey.show"
+    //   ]
+    // },
+  ],
+  "files.autoSave": "afterDelay",
+  "workbench.editor.limit.value": 3,
+  "markdown.extension.toc.unorderedList.marker": "*",
+  "markdown.extension.toc.orderedList": true,
+  "window.zoomLevel": -1,
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+}
